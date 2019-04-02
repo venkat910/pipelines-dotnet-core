@@ -27,4 +27,4 @@ steps:
     zipAfterPublish: True
 
 - task: PublishBuildArtifacts@1
-  displayName: 'Sample Artifact'
+  displayName: 'publish artifacts'
