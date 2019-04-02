@@ -11,7 +11,6 @@ pool:
 
 variables:
   buildConfiguration: 'Release'
-
 steps:
 - script: dotnet restore
   displayName: 'dotnet publish'
@@ -20,6 +19,7 @@ steps:
   displayName: 'dotnet build $(buildConfiguration)'
 
 - task: DotNetCoreCLI@2
+  displayName: 'dotnet publish'
   inputs:
     command: publish
     publishWebProjects: True
